@@ -1,0 +1,59 @@
+button {
+  position: relative;
+  border-style: none;
+  outline: 0;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  width: 100%;
+  height: 4rem;
+  border-radius: 1rem;
+  background: radial-gradient(#000, var(--bgd));
+  color: #e5e5e5;
+  box-shadow: -5px -5px 10px rgba(255, 255, 255, 0.03),
+    5px 5px 15px rgba(0, 0, 0, 0.75);
+  text-shadow: 2px 2px 3px rgba(255, 255, 255, 0.1);
+
+  &:active {
+    box-shadow: inset -5px -5px 10px rgba(255, 255, 255, 0.05),
+      inset 5px 5px 15px rgba(0, 0, 0, 0.5);
+  }
+
+  &.icon-only {
+    img {
+      height: 2.75rem;
+    }
+  }
+
+  img {
+    height: 1.5rem;
+  }
+
+  .item-count {
+    position: absolute;
+    background-color: #f15a59;
+    color: white;
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    left: -0.5rem;
+    top: -0.5rem;
+    line-height: 1.6;
+    font-size: 0.8em;
+  }
+
+  .item-text {
+    color: #e5e5e5;
+    margin-left: 0.5rem;
+  }
+}
+
+.container-fluid {
+  position: relative;
+  padding: 1rem;
+}

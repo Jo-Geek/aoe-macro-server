@@ -1,0 +1,11 @@
+:root {
+  --bgd: #101014;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--bgd);
+}

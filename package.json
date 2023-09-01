@@ -1,0 +1,31 @@
+{
+  "name": "aoe-macro-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cd react-client && npm run build && cd .. && node index.js",
+    "start-dev": "concurrently \"cd react-client && npm start\" \"nodemon index.js\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jo-Geek/aoe-macro-server.git"
+  },
+  "author": "Jones Joseph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jo-Geek/aoe-macro-server/issues"
+  },
+  "homepage": "https://github.com/Jo-Geek/aoe-macro-server#readme",
+  "dependencies": {
+    "active-win": "^8.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "robotjs": "^0.6.0",
+    "sass": "^1.66.1"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
